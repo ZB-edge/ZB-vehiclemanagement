@@ -12,10 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.LinkedHashMap;
-import java.util.List;
+import java.util.*;
 
 @Service
 public class InVehicleServiceImpl implements InVehicleService {
@@ -52,21 +49,39 @@ public class InVehicleServiceImpl implements InVehicleService {
     }
 
     @Override
-    public void updateCount(String license, int count,Date date) throws ParseException {
+    public void updateCount(String license,String institution,Date date) throws ParseException {
         SimpleDateFormat df =  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         SimpleDateFormat ds =  new SimpleDateFormat("yyyy-MM-dd ");
         Date lastDay = df.parse(ds.format(date)+"23:59:59");
         Date firstDay = df.parse(ds.format(date)+"00:00:00");
         Query query = Query.query(Criteria.where("license").is(license).and("date").gte(firstDay).lte(lastDay));
-        Update update = new Update();
-        update.set("count",count);
-        update.set("status",0);
-        mongoTemplate.upsert(query,update,InVehicle.class,"invehicle");
+        List<InVehicle> inVehicles = mongoTemplate.find(query,InVehicle.class,"invehicle");
+        if(inVehicles.equals(new LinkedList<>())){
+            InVehicle in = new InVehicle();
+            in.setLicense(license);
+            in.setDate(date);
+            in.setInstitution(institution);
+            in.setCount(1);
+            in.setStatus(0);
+            save(in);
+        }else {
+            for (InVehicle inVehicle:inVehicles){
+                Update update = new Update();
+                update.set("count",inVehicle.getCount()+1);
+                update.set("status",0);
+                update.set("date",date);
+                mongoTemplate.upsert(query,update,InVehicle.class,"invehicle");
+            }
+        }
     }
 
     @Override
-    public void updateStatus(String license) {
-        Query query = Query.query(Criteria.where("license").is(license));
+    public void updateStatus(String license,Date date) throws ParseException {
+        SimpleDateFormat df =  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat ds =  new SimpleDateFormat("yyyy-MM-dd ");
+        Date lastDay = df.parse(ds.format(date)+"23:59:59");
+        Date firstDay = df.parse(ds.format(date)+"00:00:00");
+        Query query = Query.query(Criteria.where("license").is(license).and("date").gte(firstDay).lte(lastDay));
         Update update = new Update();
         update.set("status",1);
         mongoTemplate.upsert(query,update,InVehicle.class,"invehicle");
@@ -92,8 +107,7 @@ public class InVehicleServiceImpl implements InVehicleService {
 
     @Override
     public LinkedHashMap<String, Integer> sum(String institution) throws ParseException {
-        Date date = new Date();
-        date = getBeforeOrAfterDate(date,-6);
+        Date date = getBeforeOrAfterDate(new Date(),-6);
         LinkedHashMap<String, Integer> tem = new LinkedHashMap<>();
         for (int i=0;i<7;i++){
             int sums = 0;
@@ -104,7 +118,7 @@ public class InVehicleServiceImpl implements InVehicleService {
             SimpleDateFormat dss =  new SimpleDateFormat("yyyy-MM-dd");
             String key = dss.format(date);
             tem.put(key,sums);
-            date = getBeforeOrAfterDate(date,i);
+            date = getBeforeOrAfterDate(date,1);
         }
         return tem;
     }

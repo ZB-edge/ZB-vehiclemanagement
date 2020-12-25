@@ -16,4 +16,10 @@ spring:
 server:
   edgex: localhost
   port: 8101
+RFID:
+  port: /dev/ttyUSB0
+  bitRate: 115200
+  stopBit: 1
+  dataBits: 8
+  parity: 0
 mq: activemq

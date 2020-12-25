@@ -14,8 +14,8 @@ public interface InVehicleService {
     List<InVehicle> findByInstitution(String institution);
     List<InVehicle> findInstitution(String institution);
     List<InVehicle> findAll();
-    void updateCount(String license,int count,Date date) throws ParseException;
-    void updateStatus(String license);
+    void updateCount(String license,String institution,Date date) throws ParseException;
+    void updateStatus(String license,Date date) throws ParseException;
     List<InVehicle> findByInstitutionAndDate(String institution, Date date) throws ParseException;
     LinkedHashMap<String, Integer> sum(String institution) throws ParseException;
 }

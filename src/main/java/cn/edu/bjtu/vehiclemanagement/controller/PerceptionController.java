@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -34,11 +35,12 @@ public class PerceptionController {
     @CrossOrigin
     @PostMapping("/test1")
     public String save1(@RequestParam(value = "license") String license, @RequestParam(value = "institution") String institution,
-                        @RequestParam(value = "date") Date date, @RequestParam(value = "count") int count,
-                        @RequestParam(value = "status") int status){
+                        @RequestParam(value = "date") String date, @RequestParam(value = "count") int count,
+                        @RequestParam(value = "status") int status) throws ParseException {
         InVehicle inVehicle = new InVehicle();
+        SimpleDateFormat df =  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         inVehicle.setLicense(license);
-        inVehicle.setDate(date);
+        inVehicle.setDate(df.parse(date));
         inVehicle.setInstitution(institution);
         inVehicle.setCount(count);
         inVehicle.setStatus(status);
@@ -49,11 +51,12 @@ public class PerceptionController {
     @CrossOrigin
     @PostMapping("/test2")
     public String save2(@RequestParam(value = "license") String license, @RequestParam(value = "institution") String institution,
-                        @RequestParam(value = "date") Date date, @RequestParam(value = "count") int count,
-                        @RequestParam(value = "status") int status){
+                        @RequestParam(value = "date") String date, @RequestParam(value = "count") int count,
+                        @RequestParam(value = "status") int status) throws ParseException {
         OutVehicle outVehicle = new OutVehicle();
+        SimpleDateFormat df =  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         outVehicle.setLicense(license);
-        outVehicle.setDate(date);
+        outVehicle.setDate(df.parse(date));
         outVehicle.setInstitution(institution);
         outVehicle.setCount(count);
         outVehicle.setStatus(status);
@@ -63,36 +66,22 @@ public class PerceptionController {
 
     @CrossOrigin
     @PostMapping("/add1")
-    public String add1(@RequestParam(value = "license") String license, @RequestParam(value = "institution") String institution,
-                        @RequestParam(value = "count") int count) throws ParseException {
-        InVehicle inVehicle = new InVehicle();
-        inVehicle.setLicense(license);
-        inVehicle.setDate(new Date());
-        inVehicle.setInstitution(institution);
-        if (count==1){
-            inVehicle.setCount(count);
-            inVehicleService.save(inVehicle);
-        }else {
-            inVehicleService.updateCount(license,count,new Date());
+    public String add1(@RequestParam(value = "result") String result) throws ParseException {
+        if (result.equals("8270200-1280168014112-300029-119311012032-114-9018")){
+            inVehicleService.updateCount("08式步战车-1-1","装甲兵1旅",new Date());
+            return "成功！";
         }
-        return "成功！";
+        return "查无此车辆！";
     }
 
     @CrossOrigin
     @PostMapping("/add2")
-    public String add2(@RequestParam(value = "license") String license, @RequestParam(value = "institution") String institution,
-                       @RequestParam(value = "count") int count) throws ParseException {
-        OutVehicle outVehicle = new OutVehicle();
-        outVehicle.setLicense(license);
-        outVehicle.setDate(new Date());
-        outVehicle.setInstitution(institution);
-        if (count==1){
-            outVehicle.setCount(count);
-            outVehicleService.save(outVehicle);
-        }else {
-            outVehicleService.updateCount(license,count,new Date());
+    public String add2(@RequestParam(value = "result") String result) throws ParseException {
+        if (result.equals("8270200-1280168014112-300029-119311012032-114-9018")){
+            outVehicleService.updateCount("08式步战车-1-1","装甲兵1旅",new Date());
+            return "成功！";
         }
-        return "成功！";
+        return "查无此车辆！";
     }
 
     @CrossOrigin
@@ -121,17 +110,18 @@ public class PerceptionController {
 
     @CrossOrigin
     @PostMapping("/exportIn/{institution}")
-    public String exportIn(@PathVariable String institution){
+    public String exportIn(@PathVariable String institution) throws ParseException {
         List<InVehicle> inVehicles = inVehicleService.findInstitution(institution);
-        MultiValueMap<String,Object> js = new LinkedMultiValueMap<>();
         String ip = cloudService.findIp("cloud");
         String url = "http://" + ip + ":8101/api/vehicle/test1";
+        SimpleDateFormat df =  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         for(InVehicle inVehicle : inVehicles){
             if (inVehicle.getStatus()==0){
-                inVehicleService.updateStatus(inVehicle.getLicense());
+                MultiValueMap<String,Object> js = new LinkedMultiValueMap<>();
+                inVehicleService.updateStatus(inVehicle.getLicense(),inVehicle.getDate());
                 js.add("license",inVehicle.getLicense());
                 js.add("institution",inVehicle.getInstitution());
-                js.add("date",inVehicle.getDate());
+                js.add("date",df.format(inVehicle.getDate()));
                 js.add("count",inVehicle.getCount());
                 js.add("status",1);
                 try{
@@ -144,17 +134,18 @@ public class PerceptionController {
 
     @CrossOrigin
     @PostMapping("/exportOut/{institution}")
-    public String exportOut(@PathVariable String institution){
+    public String exportOut(@PathVariable String institution) throws ParseException {
         List<OutVehicle> outVehicles = outVehicleService.findInstitution(institution);
-        MultiValueMap<String,Object> js = new LinkedMultiValueMap<>();
         String ip = cloudService.findIp("cloud");
         String url = "http://" + ip + ":8101/api/vehicle/test2";
+        SimpleDateFormat df =  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         for(OutVehicle outVehicle : outVehicles){
             if (outVehicle.getStatus()==0){
-                outVehicleService.updateStatus(outVehicle.getLicense());
+                outVehicleService.updateStatus(outVehicle.getLicense(),outVehicle.getDate());
+                MultiValueMap<String,Object> js = new LinkedMultiValueMap<>();
                 js.add("license",outVehicle.getLicense());
                 js.add("institution",outVehicle.getInstitution());
-                js.add("date",outVehicle.getDate());
+                js.add("date",df.format(outVehicle.getDate()));
                 js.add("count",outVehicle.getCount());
                 js.add("status",1);
                 try{

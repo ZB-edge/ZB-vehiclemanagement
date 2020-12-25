@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78121057-bd00-47de-a362-3647c3941db4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/entity/Cloud.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/entity/InVehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/entity/OutVehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/service/CloudService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/service/Impl/CloudServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/service/Impl/InVehicleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/service/Impl/OutVehicleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/service/InVehicleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/service/OutVehicleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/service/GetRridInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/service/Init.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/controller/PerceptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/controller/PerceptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/service/Impl/InVehicleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/service/Impl/InVehicleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/service/Impl/OutVehicleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/service/Impl/OutVehicleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/service/InVehicleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/service/InVehicleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/service/OutVehicleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/service/OutVehicleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/bjtu/vehiclemanagement/controller/PerceptionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/edu/bjtu/vehiclemanagement/controller/PerceptionController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,15 +54,21 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="GO_FMT" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="D:/rfid接口/JavaWorkSpace" />
+    <property name="last_opened_file_path" value="F:/JDK/jre/lib/ext/RXTXcomm.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -71,7 +80,34 @@
       <recent name="E:\IdeaProjects\ZB-vehiclemanagement\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.ZBVehicleManagementApplication">
+    <configuration name="TestSerial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestSerial" />
+      <module name="ZB-vehiclemanagement" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSerial.main (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZB-vehiclemanagement" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSerial" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSerial.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZB-vehiclemanagement" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSerial" />
+      <option name="METHOD_NAME" value="main([Ljava.lang.String;)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ZBVehicleManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="ZB-vehiclemanagement" />
       <extension name="coverage">
@@ -88,6 +124,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ZBVehicleManagementApplication" />
+        <item itemvalue="JUnit.TestSerial.main (1)" />
+        <item itemvalue="JUnit.TestSerial.main" />
+        <item itemvalue="Application.TestSerial" />
       </list>
     </recent_temporary>
   </component>
@@ -106,78 +145,124 @@
       <workItem from="1608125188472" duration="6000" />
       <workItem from="1608278408314" duration="5097000" />
       <workItem from="1608294576617" duration="2479000" />
-      <workItem from="1608337144349" duration="14340000" />
+      <workItem from="1608337144349" duration="19219000" />
+      <workItem from="1608369893088" duration="8521000" />
+      <workItem from="1608381496120" duration="1954000" />
+      <workItem from="1608388856466" duration="560000" />
+      <workItem from="1608420498350" duration="2346000" />
+      <workItem from="1608705891024" duration="8586000" />
+      <workItem from="1608773737111" duration="1251000" />
+      <workItem from="1608775058299" duration="1488000" />
+      <workItem from="1608776567292" duration="16870000" />
+      <workItem from="1608856819313" duration="8257000" />
+      <workItem from="1608871718504" duration="21509000" />
     </task>
+    <task id="LOCAL-00001" summary="finish">
+      <created>1608357295096</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608357295096</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="775" y="154" key="#com.intellij.ide.util.MemberChooser" timestamp="1608347802742">
+    <state x="205" y="95" width="583" height="671" key="#TestSerial" timestamp="1608875027358">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="775" y="154" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1608347802742" />
-    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1608295512863">
+    <state x="205" y="95" width="583" height="671" key="#TestSerial/0.0.1536.824@0.0.1536.824" timestamp="1608875027358" />
+    <state x="775" y="154" key="#com.intellij.ide.util.MemberChooser" timestamp="1608819712610">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608295512863" />
-    <state width="1038" height="220" key="GridCell.Tab.0.bottom" timestamp="1608000176004">
+    <state x="775" y="154" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1608819712610" />
+    <state x="553" y="279" width="516" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1608818568469">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1038" height="220" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608000176004" />
-    <state width="1038" height="220" key="GridCell.Tab.0.center" timestamp="1608000176004">
+    <state x="553" y="279" width="516" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1608818568469" />
+    <state x="353" y="10" key="CommitChangelistDialog2" timestamp="1608357294186">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1038" height="220" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608000176004" />
-    <state width="1038" height="220" key="GridCell.Tab.0.left" timestamp="1608000176004">
+    <state x="353" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608357294186" />
+    <state x="777" y="170" key="FileChooserDialogImpl" timestamp="1608370019859">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1038" height="220" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608000176004" />
-    <state width="1038" height="220" key="GridCell.Tab.0.right" timestamp="1608000176004">
+    <state x="777" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608370019859" />
+    <state width="1493" height="273" key="GridCell.Tab.0.bottom" timestamp="1608904787291">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1038" height="220" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608000176004" />
-    <state width="1038" height="220" key="GridCell.Tab.1.bottom" timestamp="1608000176005">
+    <state width="1493" height="273" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608904787291" />
+    <state width="1493" height="273" key="GridCell.Tab.0.center" timestamp="1608904787291">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1038" height="220" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608000176005" />
-    <state width="1038" height="220" key="GridCell.Tab.1.center" timestamp="1608000176005">
+    <state width="1493" height="273" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608904787291" />
+    <state width="1493" height="273" key="GridCell.Tab.0.left" timestamp="1608904787290">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1038" height="220" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1608000176005" />
-    <state width="1038" height="220" key="GridCell.Tab.1.left" timestamp="1608000176005">
+    <state width="1493" height="273" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608904787290" />
+    <state width="1493" height="273" key="GridCell.Tab.0.right" timestamp="1608904787291">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1038" height="220" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1608000176005" />
-    <state width="1038" height="220" key="GridCell.Tab.1.right" timestamp="1608000176005">
+    <state width="1493" height="273" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608904787291" />
+    <state width="1493" height="159" key="GridCell.Tab.1.bottom" timestamp="1608876408445">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1038" height="220" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1608000176005" />
-    <state x="53" y="21" width="754" height="743" key="dock-window-1" timestamp="1608357020064">
+    <state width="1493" height="159" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608876408445" />
+    <state width="1493" height="159" key="GridCell.Tab.1.center" timestamp="1608876408445">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="53" y="21" width="754" height="743" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1608357020064" />
-    <state x="249" y="62" width="774" height="743" key="dock-window-2" timestamp="1608357020064">
+    <state width="1493" height="159" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1608876408445" />
+    <state width="1493" height="159" key="GridCell.Tab.1.left" timestamp="1608876408445">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="62" width="774" height="743" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1608357020064" />
-    <state x="0" y="0" width="774" height="743" key="dock-window-3" timestamp="1608357020064">
+    <state width="1493" height="159" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1608876408445" />
+    <state width="1493" height="159" key="GridCell.Tab.1.right" timestamp="1608876408445">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" width="774" height="743" key="dock-window-3/0.0.1536.824@0.0.1536.824" timestamp="1608357020064" />
-    <state x="0" y="6" width="754" height="671" key="dock-window-4" timestamp="1608357020064">
+    <state width="1493" height="159" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1608876408445" />
+    <state x="240" y="126" width="938" height="678" key="Maven.ArtifactSearchDialog" timestamp="1608710551598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="6" width="754" height="671" key="dock-window-4/0.0.1536.824@0.0.1536.824" timestamp="1608357020064" />
-    <state x="319" y="66" width="815" height="701" key="dock-window-5" timestamp="1608357020064">
+    <state x="240" y="126" width="938" height="678" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1608710551598" />
+    <state x="367" y="0" key="SettingsEditor" timestamp="1608708025694">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="319" y="66" width="815" height="701" key="dock-window-5/0.0.1536.824@0.0.1536.824" timestamp="1608357020064" />
-    <state x="0" y="0" width="798" height="701" key="dock-window-6" timestamp="1608357020064">
+    <state x="367" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608708025694" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1608357297008">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" width="798" height="701" key="dock-window-6/0.0.1536.824@0.0.1536.824" timestamp="1608357020064" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608357297008" />
+    <state x="115" y="226" width="1052" height="803" key="dock-window-1" timestamp="1608874006260">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="115" y="226" width="1052" height="803" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1608874006260" />
+    <state x="0" y="0" width="1052" height="799" key="dock-window-2" timestamp="1608874029969">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="0" width="1052" height="799" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1608874029969" />
+    <state x="22" y="329" width="754" height="623" key="dock-window-3" timestamp="1608898177043">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="22" y="329" width="754" height="623" key="dock-window-3/0.0.1536.824@0.0.1536.824" timestamp="1608898177043" />
+    <state x="84" y="119" width="754" height="623" key="dock-window-4" timestamp="1608898489608">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="84" y="119" width="754" height="623" key="dock-window-4/0.0.1536.824@0.0.1536.824" timestamp="1608898489608" />
+    <state x="24" y="9" width="754" height="739" key="dock-window-5" timestamp="1608902660952">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="24" y="9" width="754" height="739" key="dock-window-5/0.0.1536.824@0.0.1536.824" timestamp="1608902660952" />
+    <state x="222" y="38" width="767" height="562" key="dock-window-6" timestamp="1608904795231">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="222" y="38" width="767" height="562" key="dock-window-6/0.0.1536.824@0.0.1536.824" timestamp="1608904795231" />
     <state x="326" y="69" width="754" height="701" key="dock-window-7" timestamp="1608357020064">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -190,5 +275,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="256" y="74" width="1093" height="701" key="dock-window-9/0.0.1536.824@0.0.1536.824" timestamp="1608357020064" />
+    <state x="252" y="128" key="new project wizard" timestamp="1608369920453">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="252" y="128" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1608369920453" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1608820582430">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1608820582430" />
   </component>
 </project>
