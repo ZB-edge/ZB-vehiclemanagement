@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="78121057-bd00-47de-a362-3647c3941db4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/service/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/vehiclemanagement/service/Init.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +145,9 @@
       <workItem from="1608871718504" duration="21622000" />
       <workItem from="1608961805088" duration="629000" />
       <workItem from="1608965290872" duration="883000" />
-      <workItem from="1608968186761" duration="828000" />
+      <workItem from="1608968186761" duration="925000" />
+      <workItem from="1609136090564" duration="1242000" />
+      <workItem from="1619244742439" duration="743000" />
     </task>
     <task id="LOCAL-00001" summary="finish">
       <created>1608357295096</created>
@@ -162,7 +163,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608904833957</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finish!!!!">
+      <created>1608975438120</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608975438120</updated>
+    </task>
+    <task id="LOCAL-00004" summary="finish!!!!">
+      <created>1608975491039</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608975491039</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +186,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finish" />
     <MESSAGE value="finish!!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish!!!!!" />
+    <MESSAGE value="finish!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish!!!!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="205" y="95" width="583" height="671" key="#TestSerial" timestamp="1608875027358">
@@ -186,10 +202,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="553" y="279" width="516" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1608818568469" />
-    <state x="353" y="10" key="CommitChangelistDialog2" timestamp="1608975437009">
+    <state x="353" y="10" key="CommitChangelistDialog2" timestamp="1608975490070">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="353" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608975437009" />
+    <state x="353" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608975490070" />
     <state x="777" y="170" key="FileChooserDialogImpl" timestamp="1608370019859">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -234,10 +250,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="367" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608708025694" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1608975442802">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1608975492824">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608975442802" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608975492824" />
     <state x="115" y="226" width="1052" height="803" key="dock-window-1" timestamp="1608874006260">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
