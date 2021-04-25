@@ -59,6 +59,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.edu.bjtu.vehiclemanagement.config" />
       <recent name="cn.edu.bjtu.vehiclemanagement.service.Impl" />
       <recent name="cn.edu.bjtu.vehiclemanagement.service" />
       <recent name="cn.edu.bjtu.vehiclemanagement.entity" />
@@ -148,6 +149,7 @@
       <workItem from="1608968186761" duration="925000" />
       <workItem from="1609136090564" duration="1242000" />
       <workItem from="1619244742439" duration="743000" />
+      <workItem from="1619340068141" duration="292000" />
     </task>
     <task id="LOCAL-00001" summary="finish">
       <created>1608357295096</created>
@@ -177,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608975491039</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="last">
+      <created>1619340111152</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619340111152</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,116 +196,17 @@
     <MESSAGE value="finish" />
     <MESSAGE value="finish!!!!!" />
     <MESSAGE value="finish!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish!!!!" />
+    <MESSAGE value="last" />
+    <option name="LAST_COMMIT_MESSAGE" value="last" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="205" y="95" width="583" height="671" key="#TestSerial" timestamp="1608875027358">
+    <state x="357" y="10" key="CommitChangelistDialog2" timestamp="1619340109431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="205" y="95" width="583" height="671" key="#TestSerial/0.0.1536.824@0.0.1536.824" timestamp="1608875027358" />
-    <state x="775" y="154" key="#com.intellij.ide.util.MemberChooser" timestamp="1608819712610">
+    <state x="357" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1619340109431" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1619340115258">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="775" y="154" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1608819712610" />
-    <state x="553" y="279" width="516" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1608818568469">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="553" y="279" width="516" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1608818568469" />
-    <state x="353" y="10" key="CommitChangelistDialog2" timestamp="1608975490070">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="353" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608975490070" />
-    <state x="777" y="170" key="FileChooserDialogImpl" timestamp="1608370019859">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="777" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608370019859" />
-    <state width="1493" height="176" key="GridCell.Tab.0.bottom" timestamp="1608962434881">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="176" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608962434881" />
-    <state width="1493" height="176" key="GridCell.Tab.0.center" timestamp="1608962434881">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="176" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608962434881" />
-    <state width="1493" height="176" key="GridCell.Tab.0.left" timestamp="1608962434881">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="176" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608962434881" />
-    <state width="1493" height="176" key="GridCell.Tab.0.right" timestamp="1608962434881">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="176" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608962434881" />
-    <state width="1493" height="159" key="GridCell.Tab.1.bottom" timestamp="1608876408445">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="159" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608876408445" />
-    <state width="1493" height="159" key="GridCell.Tab.1.center" timestamp="1608876408445">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="159" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1608876408445" />
-    <state width="1493" height="159" key="GridCell.Tab.1.left" timestamp="1608876408445">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="159" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1608876408445" />
-    <state width="1493" height="159" key="GridCell.Tab.1.right" timestamp="1608876408445">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="159" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1608876408445" />
-    <state x="240" y="126" width="938" height="678" key="Maven.ArtifactSearchDialog" timestamp="1608710551598">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="240" y="126" width="938" height="678" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1608710551598" />
-    <state x="367" y="0" key="SettingsEditor" timestamp="1608708025694">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="367" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608708025694" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1608975492824">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608975492824" />
-    <state x="115" y="226" width="1052" height="803" key="dock-window-1" timestamp="1608874006260">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="115" y="226" width="1052" height="803" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1608874006260" />
-    <state x="0" y="0" width="1052" height="799" key="dock-window-2" timestamp="1608874029969">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="0" y="0" width="1052" height="799" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1608874029969" />
-    <state x="22" y="329" width="754" height="623" key="dock-window-3" timestamp="1608898177043">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="22" y="329" width="754" height="623" key="dock-window-3/0.0.1536.824@0.0.1536.824" timestamp="1608898177043" />
-    <state x="84" y="119" width="754" height="623" key="dock-window-4" timestamp="1608898489608">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="84" y="119" width="754" height="623" key="dock-window-4/0.0.1536.824@0.0.1536.824" timestamp="1608898489608" />
-    <state x="24" y="9" width="754" height="739" key="dock-window-5" timestamp="1608902660952">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="24" y="9" width="754" height="739" key="dock-window-5/0.0.1536.824@0.0.1536.824" timestamp="1608902660952" />
-    <state x="222" y="38" width="767" height="562" maximized="true" key="dock-window-6" timestamp="1608961980526">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="222" y="38" width="767" height="562" maximized="true" key="dock-window-6/0.0.1536.824@0.0.1536.824" timestamp="1608961980526" />
-    <state x="326" y="69" width="754" height="701" key="dock-window-7" timestamp="1608357020064">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="326" y="69" width="754" height="701" key="dock-window-7/0.0.1536.824@0.0.1536.824" timestamp="1608357020064" />
-    <state x="-75" y="63" width="823" height="699" key="dock-window-8" timestamp="1608357020064">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="-75" y="63" width="823" height="699" key="dock-window-8/0.0.1536.824@0.0.1536.824" timestamp="1608357020064" />
-    <state x="256" y="74" width="1093" height="701" key="dock-window-9" timestamp="1608357020064">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="256" y="74" width="1093" height="701" key="dock-window-9/0.0.1536.824@0.0.1536.824" timestamp="1608357020064" />
-    <state x="252" y="128" key="new project wizard" timestamp="1608369920453">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="252" y="128" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1608369920453" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1608820582430">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1608820582430" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1619340115258" />
   </component>
 </project>
